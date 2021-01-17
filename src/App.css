@@ -30,7 +30,7 @@
   row-gap: 45px;
 }
 .App > .square {
-  background: black;
+  background-color: black;
   padding: 1.5rem;
   border-radius: 1rem;
 }
