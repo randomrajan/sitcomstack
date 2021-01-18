@@ -1,6 +1,5 @@
 import React from "react";
 import './App.css';
-import './Square.js';
 import Square from "./Square.js";
 
 function App() {
