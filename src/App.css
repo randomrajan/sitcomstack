@@ -1,3 +1,20 @@
+.App {
+  display: grid;
+  padding: 50px 25px 25px 25px ;
+  /* padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 100px;
+  grid-template-columns: 33.33% 33.33% 33.33%; */
+  grid-template-columns: auto auto auto; 
+  margin: 1.66%;
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+.Header{
+  text-align: center;
+}
+
 /* body{
   background-color: whitesmoke;
 }
@@ -23,21 +40,18 @@
   
 } */
 
-.App {
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto;
-  background-color: whitesmoke;
-  padding: 10px;
-  border-radius: 10px;
-}
-.square {
+
+/* .Square {
   background-color: #80cbc4;
-  border: 1px solid #fff;
+  border: 1px solid black;
   padding: 40px;
   font-size: 30px;
   text-align: center;
-}
+} 
 body {
   margin: 2rem;
   font: 12px system-ui;
 }
+
+*/
+
