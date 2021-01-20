@@ -1,4 +1,4 @@
-const thestack = [
+export const thestack = [
     {
         id: 1,
         username: 'its_surajmaity',
