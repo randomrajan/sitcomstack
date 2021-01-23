@@ -1,39 +1,49 @@
+import { FaCouch,FaRegLaughSquint, FaTruck,FaHorse,FaLaptopCode,FaCoffee,FaChessKing,FaBlackTie } from 'react-icons/fa';
+import { GiStoneThrone,GiWitchFlight,GiSherlockHolmes,GiInfinity,GiFamilyHouse, GiSpartanHelmet,GiSpaceSuit,GiEternalLove,GiDramaMasks } from 'react-icons/gi'
+import { FiInstagram } from 'react-icons/fi'
 export const thestack = [
     {
         id: 1,
         username: 'its_surajmaity',
         sitcoms: ['Peaky Blinders','The Witcher','Breaking Bad','Sherlock','Dark'],
-        sitcom_link: 'https://www.instagram.com/its_surajmaity',
+        icon: [<FaHorse />, <GiWitchFlight />, <FaTruck />, <GiSherlockHolmes />, <GiInfinity />, <FiInstagram />],
+        username_link: 'https://www.instagram.com/its_surajmaity'
     },
     {
         id: 2,
         username: 'priyansh__8',
         sitcoms: ['Peaky Blinders','Mr Robot','Breaking Bad','Sherlock','Dark'],
-        sitcom_link: 'https://www.instagram.com/priyansh__8',
+        icon: [<FaHorse />, <FaLaptopCode />, <FaTruck />, <GiSherlockHolmes />, <GiInfinity />, <FiInstagram />],
+        username_link: 'https://www.instagram.com/priyansh__8',
+        
     },
     {
         id: 3,
         username: 'shekhar_mandal_',
         sitcoms: ['Peaky Blinders','This is Us','Breaking Bad','Rome','Dark'],
-        sitcom_link: 'https://www.instagram.com/shekhar_mandal_',
+        icon: [<FaHorse />, <GiFamilyHouse />, <FaTruck />, <GiSpartanHelmet />, <GiInfinity />, <FiInstagram />],
+        username_link: 'https://www.instagram.com/shekhar_mandal_',
     },
     {
         id: 4,
         username: 'h28h8_00',
         sitcoms: ['Lost in Space','Friends','Descendants of the Sun','The Royals','Beyhadh'],
-        sitcom_link: 'https://www.instagram.com/h28h8_00',
+        icon: [<GiSpaceSuit />, <FaCoffee />, <GiEternalLove />, <FaChessKing />, <GiDramaMasks />, <FiInstagram />],
+        username_link: 'https://www.instagram.com/h28h8_00',
     },
     {
         id: 5,
         username: 'iamneegam',
         sitcoms: ['Friends','Suits','Game of Thrones','Breaking Bad','Peaky Blinders'],
-        sitcom_link: 'https://www.instagram.com/iamneegam',
+        icon: [<FaCoffee />, <FaBlackTie />, <GiStoneThrone />, <FaTruck />, <FaHorse />, <FiInstagram />],
+        username_link: 'https://www.instagram.com/iamneegam',
     },
     {
         id: 6,
         username: 'randomrajan',
         sitcoms: ['Friends','Suits','Game of Thrones','Sarabhai vs Sarabhai','That 70s Show'],
-        sitcom_link: 'https://www.instagram.com/randomrajan',
+        icon: [<FaCoffee />, <FaBlackTie />, <GiStoneThrone />, <FaRegLaughSquint />, <FaCouch />, <FiInstagram />],
+        username_link: 'https://www.instagram.com/randomrajan',
     },
 ]
 
