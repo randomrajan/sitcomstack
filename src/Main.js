@@ -7,7 +7,7 @@ function Main(){
     return(
         <div>
             <Header />
-            <Dropdown />
+            {/* <Dropdown /> */}
             <App />
         </div>
     );

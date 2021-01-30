@@ -7,26 +7,42 @@ class Dropdown extends React.Component{
         this.state = {
             namez: thestack
         }
-        this.state.namez.map(r => console.log(r.username))
+        //this.state.namez.map(r => console.log(r.username))
+        this.handlechange = this.handlechange.bind(this)
     }
 
-    // Function handlechange()
-    // {
-    //     return 0
-    // }
+    handlechange =()=> {
+        this.setState(prevState => {
+            const list = prevState.namez[0]
+            return {
+                namez: prevState.list
+            }
+            console.log(list)
+        })
+    };
+
     render(){
-        const w = this.state.namez.map(r => r.username)
+        // console.log(list);
+        console.log(this.handlechange.list)
+        const w = thestack.map(r => r.username)
         return(
-            
-            <select placeholder="Sitcoms" onChange={this.handlechange}>
-                <option value={w[0]}>{w[0]}</option>
-                <option value={w[1]}>{w[1]}</option>
-                <option value={w[2]}>{w[2]}</option>
-                <option value={w[3]}>{w[3]}</option>
-                <option value={w[4]}>{w[4]}</option>
+            <select placeholder="Sitcoms" >
+                <option value='its_surajmaity'>{w[0]}</option>
+                <option value='priyansh__8'>priyansh__8</option>
+                <option value='shekhar_mandal_'>shekhar_mandal_</option>
+                <option value='h28h8_00'>h28h8_00</option>
+                <option value='iamneegam'>iamneegam</option>
             </select>
         );
         }
 }
 
 export default Dropdown;
+
+// this.setState(prevState => {
+        //     // return {
+        //     //     namez: prevState.thestack.username
+        //     // }
+            // this.setState.map((prevState,r) => {return {namez: prevState.r.username}})
+        // })
+        // this.state.people.map(r => console.log(r.username))
