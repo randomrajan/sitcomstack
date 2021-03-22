@@ -19,7 +19,9 @@ function Square(props) {
         {props.icon_four} <span /> <span />
         {props.sitcoms_four} <br />
         {props.icon_five} <span /> <span />
-        {props.sitcoms_five}
+        {props.sitcoms_five} <br />
+        {props.icon_six} <span /> <span />
+        {props.sitcoms_six} 
       </p>
     </div>
   );

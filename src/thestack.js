@@ -1,5 +1,5 @@
 import { FaCouch,FaRegLaughSquint, FaTruck,FaHorse,FaLaptopCode,FaCoffee,FaChessKing,FaBlackTie } from 'react-icons/fa';
-import { GiStoneThrone,GiWitchFlight,GiSherlockHolmes,GiInfinity,GiFamilyHouse, GiSpartanHelmet,GiSpaceSuit,GiEternalLove,GiDramaMasks } from 'react-icons/gi'
+import { GiStoneThrone,GiWitchFlight,GiSherlockHolmes,GiInfinity,GiFamilyHouse, GiSpartanHelmet,GiSpaceSuit,GiEternalLove,GiDramaMasks, GiCeremonialMask, GiPoliceOfficerHead,GiPoliceBadge } from 'react-icons/gi'
 import { FiInstagram } from 'react-icons/fi'
 export const thestack = [
     {
@@ -45,6 +45,13 @@ export const thestack = [
         icon: [<FaCoffee />, <FaBlackTie />, <GiStoneThrone />, <FaRegLaughSquint />, <FaCouch />, <FiInstagram />],
         username_link: 'https://www.instagram.com/randomrajan',
     },
+    {
+        id: 7,
+        username: 'shreypatel_23',
+        sitcoms: ['Friends','Breaking Bad','Dark','Money Heist','Brooklyn Nine-Nine'],
+        icon: [<FaCoffee />, <FaBlackTie />, <FiInstagram />, <GiCeremonialMask />, <GiPoliceBadge />, <FiInstagram />],
+        username_link: 'https://www.instagram.com/shreypatel_23',
+    }
 ]
 
 export default thestack
