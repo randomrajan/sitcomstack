@@ -1,5 +1,5 @@
 import { FaCouch,FaRegLaughSquint, FaTruck,FaHorse,FaLaptopCode,FaCoffee,FaChessKing,FaBlackTie } from 'react-icons/fa';
-import { GiStoneThrone,GiWitchFlight,GiSherlockHolmes,GiInfinity,GiFamilyHouse, GiSpartanHelmet,GiSpaceSuit,GiEternalLove,GiDramaMasks, GiCeremonialMask, GiPoliceOfficerHead,GiPoliceBadge } from 'react-icons/gi'
+import { GiStoneThrone,GiWitchFlight,GiSherlockHolmes,GiInfinity,GiFamilyHouse, GiSpartanHelmet, GiSpaceSuit,GiEternalLove,GiDramaMasks, GiCeremonialMask, GiPoliceOfficerHead,GiPoliceBadge } from 'react-icons/gi'
 import { FiInstagram } from 'react-icons/fi'
 export const thestack = [
     {

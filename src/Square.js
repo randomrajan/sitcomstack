@@ -9,7 +9,7 @@ function Square(props) {
     <div className="Square">
       <p>
         {props.icon_six} <span /> <span />
-        <a className='link' href= {props.username_link}>{props.username}</a> <br /> <br />
+        <a className='link' href= {props.username_link}>{props.username}</a> {" "} <br /> <br />
         {props.icon_one} <span /> <span />
         {props.sitcoms_one} <br />
         {props.icon_two} <span /> <span />
