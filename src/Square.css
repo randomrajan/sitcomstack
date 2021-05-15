@@ -28,5 +28,12 @@ p::after {
 
 .link {
   text-decoration: none;
-  color: black;
+  color: #E1306C;
+  font-weight: bold;
+}
+
+.iconAlign{
+  vertical-align: middle;
+  margin-right: 5px;
+  
 }

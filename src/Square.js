@@ -8,20 +8,18 @@ function Square(props) {
   return (
     <div className="Square">
       <p>
-        {props.icon_six} <span /> <span />
-        <a className='link' href= {props.username_link}>{props.username}</a> {" "} <br /> <br />
-        {props.icon_one} <span /> <span />
+        <span className='iconAlign'>{props.icon_six}</span>
+        <a   className='link' href= {props.username_link}>{props.username}</a> <br /> <br />
+        <span className='iconAlign'> {props.icon_one} </ span> 
         {props.sitcoms_one} <br />
-        {props.icon_two} <span /> <span />
+        <span className='iconAlign'> {props.icon_two}  </ span >
         {props.sitcoms_two} <br />
-        {props.icon_three} <span /> <span />
+         <span className='iconAlign'>{props.icon_three} </span >
         {props.sitcoms_three} <br />
-        {props.icon_four} <span /> <span />
+         <span className='iconAlign'> {props.icon_four}</span >
         {props.sitcoms_four} <br />
-        {props.icon_five} <span /> <span />
+         <span className='iconAlign'>{props.icon_five} </span >
         {props.sitcoms_five} <br />
-        {props.icon_six} <span /> <span />
-        {props.sitcoms_six} 
       </p>
     </div>
   );
