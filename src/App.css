@@ -1,6 +1,6 @@
 .App {
   display: grid;
-  padding: 50px 25px 25px 25px ;
+  padding: 40px 25px 25px 25px ;
   /* padding-left: 25px;
   padding-right: 25px;
   padding-top: 100px;
@@ -9,10 +9,25 @@
   margin: 1.66%;
   row-gap: 15px;
   column-gap: 15px;
+  
 }
 
 .Header{
   text-align: center;
+}
+
+.pholder{
+  margin-left: 25 px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.optionColor{
+  
+}
+
+.reloadButton{
+  
 }
 
 /* body{
