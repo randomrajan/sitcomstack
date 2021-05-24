@@ -16,15 +16,17 @@ export default function App() {
     }
   }, [selectedUserName]);
   useEffect(() => {
-   
+    
+    
     if (selectedTVShow !== "") {
+      let voila = [10]
+      for(let i=0;i<10;i++){ 
       setTvShow(
-        thestack.filter((showme = []) => {return showme.sitcoms === selectedTVShow})
-        
-      // thestack.filter((showme) => showme.sitcoms[2] === selectedTVShow)
-    );
-      
-    }
+         thestack.filter((showme=[i]) => {return showme.sitcoms[i] === selectedTVShow})  
+        // thestack.filter((showme) => showme.sitcoms[2] === selectedTVShow)
+        );
+          }
+      }
     for(let i=0;i<10;i++){console.log(thestack.filter((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow}));}
     
   }, [selectedTVShow]);
@@ -46,7 +48,8 @@ export default function App() {
     <div>
       <select
         placeholder="Sitcoms"
-        onChange={(event) => setSelectedUserName(event.target.value)}
+        onChange={(event) => setSelectedUserName(event.target.value) }
+        
       >
         <option value="nothing">Select the username</option>
         <option value="priyansh__8">priyansh__8</option>
