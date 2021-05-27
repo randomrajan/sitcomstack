@@ -1,6 +1,6 @@
 .App {
   display: grid;
-  padding: 40px 25px 25px 25px ;
+  padding: 25px 25px 25px 25px ;
   /* padding-left: 25px;
   padding-right: 25px;
   padding-top: 100px;
@@ -31,7 +31,13 @@
 }
 
 .TVdropdown{
-  right: 0;
+  float: right;
+  margin-right: 150px;
+}
+
+.usernamedropdown{
+  float: left;
+  margin-left: 55px;
 }
 /* body{
   background-color: whitesmoke;

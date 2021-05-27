@@ -13,21 +13,31 @@ export default function App() {
       setTvShow(() =>
         thestack.filter((show) => show.username === selectedUserName)
       );
+      console.log(thestack.filter((show) => show.username === selectedUserName));
+      // for(let i=0;i<10;i++){
+      //   if(thestack[i].username === selectedUserName){
+      //     setTvShow(() =>
+      //     thestack.filter((show) => show.username === selectedUserName)
+      //     );
+      //     } }
+      
     }
   }, [selectedUserName]);
   useEffect(() => {
-    
-    
-    if (selectedTVShow !== "") {
-      let voila = [10]
-      for(let i=0;i<10;i++){ 
+      if (selectedTVShow !== "") {
+      let voila = [1,2,3,4,5,6]
+      console.log(voila.length);
+  // for(let i=0;i<10;i++){ 
       setTvShow(
-         thestack.filter((showme=[i]) => {return showme.sitcoms[i] === selectedTVShow})  
-        // thestack.filter((showme) => showme.sitcoms[2] === selectedTVShow)
+      // [...thestack].forEach(item => thestack.filter((showme = [item]) => {return showme.sitcoms[item] === selectedTVShow}))
+      // voila.forEach(item =>{  thestack.filter((showme=[item]) => {return showme.sitcoms[item] === selectedTVShow})            })      
+      
+        thestack.filter((showme) => showme.sitcoms[2] === selectedTVShow)
         );
-          }
-      }
-    for(let i=0;i<10;i++){console.log(thestack.filter((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow}));}
+                 // }
+      voila.forEach(i =>{console.log(thestack.filter((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow}));})
+                }
+    
     
   }, [selectedTVShow]);
   let summedArray = thestack[1].sitcoms.concat(
@@ -39,7 +49,7 @@ export default function App() {
   //console.log(summedArray)
   let newsummedArray = [...new Set(summedArray)];
   //console.log(newsummedArray);
-  // console.log(thestack[3].sitcoms[3]);
+  console.log(thestack[3].sitcoms[3]);
   let vola = newsummedArray.map((element) => {
     return element;
   });
@@ -47,9 +57,9 @@ export default function App() {
   return (
     <div>
       <select
+        className="usernamedropdown"
         placeholder="Sitcoms"
         onChange={(event) => setSelectedUserName(event.target.value) }
-        
       >
         <option value="nothing">Select the username</option>
         <option value="priyansh__8">priyansh__8</option>
