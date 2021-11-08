@@ -12,8 +12,8 @@ export default function App() {
     if (selectedUserName !== "") {
       setTvShow(() =>
         thestack.filter((show) => show.username === selectedUserName)
-      );
-      console.log(thestack.filter((show) => show.username === selectedUserName));
+        );
+      //console.log(thestack.filter((show) => show.username === selectedUserName));
       // for(let i=0;i<10;i++){
       //   if(thestack[i].username === selectedUserName){
       //     setTvShow(() =>
@@ -23,20 +23,31 @@ export default function App() {
       
     }
   }, [selectedUserName]);
-  useEffect(() => {
-      if (selectedTVShow !== "") {
-      let voila = [1,2,3,4,5,6]
-      console.log(voila.length);
-  // for(let i=0;i<10;i++){ 
-      setTvShow(
-      // [...thestack].forEach(item => thestack.filter((showme = [item]) => {return showme.sitcoms[item] === selectedTVShow}))
-      // voila.forEach(item =>{  thestack.filter((showme=[item]) => {return showme.sitcoms[item] === selectedTVShow})            })      
+   useEffect(() => {
       
-        thestack.filter((showme) => showme.sitcoms[2] === selectedTVShow)
-        );
-                 // }
-      voila.forEach(i =>{console.log(thestack.filter((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow}));})
-                }
+      if (selectedTVShow !== "") {
+        let voila=[1,2,3,4,5,6,7,8,9]
+        let i
+        for(i=0;i<10;i++){console.log(i)}
+        let updatetvshow =()=> {
+        
+      thestack.filter((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow}); 
+      
+    }
+    setTvShow(updatetvshow);
+    for(let i in voila){  
+    console.log(
+        
+          
+        thestack.filter((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow})
+        
+      
+      );}
+      //return updatetvshow
+      
+  
+
+ }
     
     
   }, [selectedTVShow]);
@@ -49,7 +60,8 @@ export default function App() {
   //console.log(summedArray)
   let newsummedArray = [...new Set(summedArray)];
   //console.log(newsummedArray);
-  console.log(thestack[3].sitcoms[3]);
+ // console.log(thestack[3].sitcoms);
+  //console.log(thestack.username);
   let vola = newsummedArray.map((element) => {
     return element;
   });
@@ -108,3 +120,39 @@ export default function App() {
     </div>
   );
 }
+
+
+// let voila = [1,2,3,4,5,6]
+      // let see = voila.forEach(i => {return i})
+      // console.log(voila.length);
+      // let storeString;
+      // var i;
+      // // let mainArray = voila.forEach(i =>{thestack.filter((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow});})
+      // console.log(mainArray);
+      // if (thestack.forEach((showme = [i]) => showme.sitcoms[i]) === selectedTVShow)
+      // {
+      //   console.log('yipee');
+      // }
+      // const founddd = voila.forEach(i =>{thestack.find((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow});})
+      // let foundarray = []
+      // foundarray.push(voila.forEach(i =>{thestack.find((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow});}))
+      // console.log(foundarray);
+      // voila.forEach(i =>{console.log(thestack.find((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow}));})
+      // console.log(
+      //   thestack.find( (sit) => sit.sitcoms[2] === selectedTVShow)
+      // );
+      // for(let i=0;i<10;i++){ 
+
+
+      // [...thestack].forEach(item => thestack.filter((showme = [item]) => {return showme.sitcoms[item] === selectedTVShow}))
+      // voila.forEach(item =>{  thestack.filter((showme=[item]) => {return showme.sitcoms[item] === selectedTVShow})            })      
+      
+        // thestack.filter((showme = [voila]) => [showme.sitcoms[voila]] === selectedTVShow)
+        // voila.forEach(i =>{thestack.find((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow});})
+        
+        // voila.forEach(i =>{thestack.filter((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow});})
+        //);
+                 // }
+      // console.log(thestack.filter((showme) => showme.sitcoms[showme] === selectedTVShow));
+      // console.log(
+      //   thestack.flatMap(x => x.filter((showme=[x])=>{return showme.sitcoms[x] === selectedTVShow}))

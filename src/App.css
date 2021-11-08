@@ -16,6 +16,12 @@
   text-align: center;
 }
 
+.Footer{
+  text-align: center;
+  font-size: medium;
+  font-style: italic;
+}
+
 .pholder{
   margin-left: 25 px;
   padding-left: 25px;

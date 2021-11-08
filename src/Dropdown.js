@@ -17,7 +17,7 @@ class Dropdown extends React.Component{
             return {
                 namez: prevState.list
             }
-            console.log(list)
+            // console.log(list)
         })
     };
 

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import "./Square.css";
-import { thestack } from "./thestack";
+// import { thestack } from "./thestack";
 //import { Link } from 'react-router';
 
 function Square(props) {
