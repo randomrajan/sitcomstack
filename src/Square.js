@@ -15,15 +15,16 @@ function Square(props) {
         {""}
         <br /> <br />
         <span className="iconAlign"> {props.icon_one} </span>
-        {props.sitcoms_one} <br />
+        {props.sitcoms_one} 
+        <span>{props.rating_one}</span><br />
         <span className="iconAlign"> {props.icon_two} </span>
-        {props.sitcoms_two} <br />
+        {props.sitcoms_two} {props.rating_two}<br />
         <span className="iconAlign">{props.icon_three} </span>
-        {props.sitcoms_three} <br />
+        {props.sitcoms_three}{props.rating_three} <br />
         <span className="iconAlign"> {props.icon_four}</span>
-        {props.sitcoms_four} <br />
+        {props.sitcoms_four} {props.rating_four}<br />
         <span className="iconAlign">{props.icon_five} </span>
-        {props.sitcoms_five} <br />
+        {props.sitcoms_five} {props.rating_five}<br />
       </p>
     </div>
   );

@@ -24,33 +24,22 @@ export default function App() {
     }
   }, [selectedUserName]);
    useEffect(() => {
-      
       if (selectedTVShow !== "") {
         let voila=[1,2,3,4,5,6,7,8,9]
         let i
-        for(i=0;i<10;i++){console.log(i)}
-        let updatetvshow =()=> {
-        
-      thestack.filter((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow}); 
-      
-    }
-    setTvShow(updatetvshow);
+        // for(let i in voila){
+        setTvShow(()=> 
+        thestack.filter((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow}));
+    
+    // voila.forEach(setTvShow);
     for(let i in voila){  
     console.log(
-        
-          
         thestack.filter((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow})
-        
-      
-      );}
+        );}
       //return updatetvshow
-      
-  
-
- }
-    
-    
-  }, [selectedTVShow]);
+      }
+    }
+    , [selectedTVShow]);
   let summedArray = thestack[1].sitcoms.concat(
     thestack[2].sitcoms,
     thestack[3].sitcoms,
@@ -106,14 +95,19 @@ export default function App() {
             username_link={item.username_link}
             icon_one={item.icon[0]}
             sitcoms_one={item.sitcoms[0]}
+            ratings_one={item.ratings}
             icon_two={item.icon[1]}
             sitcoms_two={item.sitcoms[1]}
+            ratings_two={item.ratings[1]}
             icon_three={item.icon[2]}
             sitcoms_three={item.sitcoms[2]}
+            ratings_three={item.ratings[2]}
             icon_four={item.icon[3]}
             sitcoms_four={item.sitcoms[3]}
+            ratings_four={item.ratings[3]}
             icon_five={item.icon[4]}
             sitcoms_five={item.sitcoms[4]}
+            ratings_five={item.ratings[4]}
           />
         ))}
       </div>
@@ -124,7 +118,7 @@ export default function App() {
 
 // let voila = [1,2,3,4,5,6]
       // let see = voila.forEach(i => {return i})
-      // console.log(voila.length);
+      //  console.log(voila.length);
       // let storeString;
       // var i;
       // // let mainArray = voila.forEach(i =>{thestack.filter((showme = [i]) => {return showme.sitcoms[i] === selectedTVShow});})
